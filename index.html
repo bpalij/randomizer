@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Randomizer</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">   		
+   		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="header">Randomizer</h1>
+			<div class="wait">
+					<big>Please wait</big>
+			</div>
+			<form action="" class="form-inline">
+				<div class="form-group">
+					<label for="input-min">Minimum:</label>
+					<input type="text" class="form-control" id="input-min" placeholder="Write minimum value" required>
+					<label for="input-max">Maximum:</label>
+					<input type="text" class="form-control" id="input-max" placeholder="Write maximum value" required>
+					<div class="checkbox">
+						<label><input type="checkbox" id="whole-checkbox">Whole numbers only</label>
+					</div>
+					<button type="reset" class="btn btn-warning" id="rst-btn">Reset form</button>
+					<button type="button" class="btn btn-success" id="start-button" onclick="generate()">Generate!</button>
+			</div>	
+		</form>
+		<p><b>Generated value:</b></p>
+		<p id="generated-value"></p>
+		<br>
+		<p><b>Boolean generator:</b></p>
+		<p id="generated-boolean"></p>
+		<button type="button" id="start-boolean" class="btn btn-success" onclick="generateBoolean()">Generate!</button>
+		<p class="footer">Created by Bogdan Paliy</p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+	<script src="index.js"></script>
+	</body>
+</html>
