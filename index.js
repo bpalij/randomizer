@@ -35,7 +35,12 @@ function generate(){
 	//alert("q");
 	$(".wait").css("visibility", "visible");
 	var min = $("#input-min").val();
-	var max = $("#input-max").val();	
+	var max = $("#input-max").val();
+	if (!(/S/i.exec(min)&&/S/i.exec(max))){
+		alert("Incorrect input! Both fields must be filled!");
+		$(".wait").css("visibility", "hidden");
+		return;
+	}	
 	min = Number(min);
 	max = Number(max); 
 	if (isNaN(min)||isNaN(max)){
