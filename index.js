@@ -36,7 +36,7 @@ function generate(){
 	$(".wait").css("visibility", "visible");
 	var min = $("#input-min").val();
 	var max = $("#input-max").val();
-	if (!(/S/i.exec(min)&&/S/i.exec(max))){
+	if (!(/\S/i.exec(min)&&/\S/i.exec(max))){
 		alert("Incorrect input! Both fields must be filled!");
 		$(".wait").css("visibility", "hidden");
 		return;
